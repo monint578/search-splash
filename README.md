@@ -28,8 +28,8 @@ Application is deployed using GitHub pages. [Click me to see demo!](https://moni
    ### ❗ Important
 
    This app is using API Access Key 🔑. To get the Access Key you have to create free account in Unsplash. After that follow:
-   1. Create a new  ```.env  ``` file in the project's root directory
-   2. Add following line to the file: ``` REACT_APP_API_KEY="YOUR ACCESS KEY" ```
+   * Create a new  ```.env  ``` file in the project's root directory
+   * Add following line to the file: ``` REACT_APP_API_KEY="YOUR ACCESS KEY" ```
 
 ## 🎨 Color Reference
 
