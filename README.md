@@ -1,7 +1,7 @@
 # Search Splash - image search web
 This application is built with React & Redux. SASS is used for styling.
 
-Application is deployed using GitHub pages. [Click me to see demo](https://monint578.github.io/search-splash/)
+Application is deployed using GitHub pages. [Click me to see demo!](https://monint578.github.io/search-splash/)
 
 ## ✨ Features
 * Data is fetched from [Unsplash.com](https://unsplash.com/documentation) API
@@ -10,17 +10,26 @@ Application is deployed using GitHub pages. [Click me to see demo](https://monin
 * Infinite scroll effect is made using [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component)
 * "Loading" and "No images found" animations are from [Lottie](https://www.lootie.com/)
 
+
+
 ## 🚀 Building and Running the App
 
 1. ```sh
    npm install
    ```
-2. ```sh
+2. To run locally: 
+   ```sh
    npm start
    ```
-3. ```sh
+3. To build for production:
+   ```sh
    npm run build
    ```
+   ### ❗ Important
+
+   This app is using API Access Key 🔑. To get the Access Key you have to create free account in Unsplash. After that follow:
+   1. Create a new  ```.env  ``` file in the project's root directory
+   2. Add following line to the file: ``` REACT_APP_API_KEY="YOUR ACCESS KEY" ```
 
 ## 🎨 Color Reference
 
