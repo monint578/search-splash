@@ -1,0 +1,49 @@
+.typewriter {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  top: 0.3rem;
+  max-width: max-content;
+  color: $color-primary;
+  animation: typing;
+  animation-duration: 5s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+
+  &::after {
+    content: "|";
+    position: absolute;
+    color: $color-text;
+    right: 0;
+    width: 5px;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 100%;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .typewriter {
+    top: 0.4rem;
+  }
+}

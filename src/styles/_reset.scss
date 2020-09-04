@@ -1,0 +1,52 @@
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: normal;
+  cursor: pointer;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none !important;
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+p,
+ul, h1, h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  background-color: inherit;
+
+  &:focus {
+    outline: none !important;
+  }
+}

@@ -1,0 +1,75 @@
+.masonry {
+  width: 90vw;
+  padding-top: 1rem;
+  margin: 0 auto;
+  columns: 1;
+  column-gap: 1rem;
+  border-radius: $radiusImg;
+
+  & .masonry-item {
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    break-inside: avoid;
+    position: relative;
+
+    & img {
+      border-radius: $radiusImg;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+// Hover image
+.overlay {
+  position: absolute;
+  font-size: larger;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: linear-gradient(
+    45deg,
+    #e41366,
+    #FF9671
+  );
+  border-radius: $radiusImg;
+  line-height: 3rem;
+}
+
+.content {
+  color: $color-bg;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// TABLET
+@media only screen and (min-width: 426px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+// LAPTOP
+@media only screen and (min-width: 769px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+// LARGE SCREEN
+@media only screen and (min-width: 1026px) {
+  .masonry {
+    columns: 4;
+  }
+}

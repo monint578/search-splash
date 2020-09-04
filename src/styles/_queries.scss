@@ -1,0 +1,47 @@
+.queries {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.query {
+  @include queryBtn();
+  margin: 0 0.3rem 0.3rem 0.3rem;
+  opacity: 0.8;
+  @include transition(all, 0.2s);
+
+  &:hover {
+    opacity: 1;
+    box-shadow: $shadow-light;
+
+    & .delete {
+      background-color: $color-primary;
+      border-left: 1px solid $color-primary;
+      @include transition(all, 0.3s);
+    }
+  }
+
+  button {
+    padding: 0.5rem;
+    color: $color-text;
+  }
+  .delete {
+    border-radius: 0 $radius $radius 0;
+    color: $color-bg;
+    border-left: 1px solid $color-bg;
+    @include transition(all, 0.3s);
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .queries {
+    padding: 0.5rem 5vw;
+  }
+  .query {
+    margin: 0.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

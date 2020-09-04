@@ -1,0 +1,63 @@
+$font: 'Quicksand', sans-serif;
+
+$color-bg: #fafafa;
+$color-text: #311358;
+$color-primary: #7b36d4;
+$color-accent: #FF9671;
+$color-delete: #e41366;
+
+$radius: 5rem;
+$radiusImg: 1rem;
+
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+
+@mixin flexCenter($direction, $justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin grid($gap, $justify) {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 5rem);
+  grid-template-rows: minmax(auto, 3rem);
+  grid-gap: $gap;
+  margin: 0 auto;
+  justify-items: $justify;
+  justify-content: $justify;
+}
+
+@mixin searchBtn() {
+  padding: 0.5rem 1rem;
+  color: $color-bg;
+  height: 100%;
+  border-radius: 0 $radius $radius 0;
+  border-left: 1px solid $color-bg;
+}
+
+@mixin saveBtn() {
+  padding: 0.5rem;
+  border-radius: $radius;
+  color: $color-bg;
+  opacity: 0.9;
+  box-shadow: $shadow-dark;
+}
+
+@mixin queryBtn() {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background: linear-gradient(
+    -90deg,
+    $color-delete,
+    $color-accent
+  );
+  border-radius: $radius;
+}
+
+@mixin transition($transition, $speed) {
+  transition: $speed ease-in $transition;
+}

@@ -1,0 +1,12 @@
+.sadsearch {
+    @include flexCenter(column, center);
+    text-align: center;
+    font-size: medium;
+    height: 75vh;
+}
+
+@media only screen and (min-width: 426px) {
+    .sadsearch {
+        font-size: large;
+    }
+}
