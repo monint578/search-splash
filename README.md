@@ -1,12 +1,14 @@
 # Search Splash - image search web
 This application is built with React & Redux. SASS is used for styling.
 
+Application is deployed using GitHub pages. [Click me to see demo](https://monint578.github.io/search-splash/)
+
 ## ✨ Features
-* Data is fetched from [Unsplash.com] (https://unsplash.com/documentation) API
+* Data is fetched from [Unsplash.com](https://unsplash.com/documentation) API
 * You can search images using search input field
-* You can save you favorite search (queries) and use it for searching images later. Saved queries are stored via Redux.
-* Infinite scroll effect is made using [react-infinite-scroll-component] (https://www.npmjs.com/package/react-infinite-scroll-component).
-* "Loading" and "No images found" animations are from [Lottie] (https://www.lootie.com/).
+* You can save you favorite search (queries) and use it for searching images later. Saved queries are stored via Redux
+* Infinite scroll effect is made using [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component)
+* "Loading" and "No images found" animations are from [Lottie](https://www.lootie.com/)
 
 ## 🚀 Building and Running the App
 
@@ -17,7 +19,7 @@ This application is built with React & Redux. SASS is used for styling.
    npm start
    ```
 3. ```sh
-      npm run build
+   npm run build
    ```
 
 ## 🎨 Color Reference
